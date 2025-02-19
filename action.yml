@@ -1,0 +1,18 @@
+name: 'Notion to Hugo'
+description: 'Convert Notion pages to Hugo blog posts'
+author: 'rxrw'
+
+inputs:
+  notion_secret:
+    description: 'Notion integration secret token'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'ghcr.io/rxrw/notion2hugo:latest'
+  env:
+    NOTION_SECRET: ${{ inputs.notion_secret }}
+
+branding:
+  icon: 'book'
+  color: 'blue'

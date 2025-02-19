@@ -1,0 +1,51 @@
+{
+    "databaseID": "your-database-id",
+    "content": {
+        "folder": "content/posts",
+        "archetype": "archetypes/post.md"
+    },
+    "storage": {
+        "type": "s3",
+        "s3": {
+            "bucket": "your-bucket",
+            "region": "auto",
+            "endpoint": "https://your-s3-endpoint",
+            "pathPrefix": "images",
+            "urlPrefix": "https://your-cdn-domain/images",
+            "urlStyle": "path",
+            "forcePathStyle": true
+        }
+    },
+    "notion": {
+        "status": {
+            "draft": "Draft 📝",
+            "ready": "Ready ✅",
+            "published": "Published 🖨"
+        },
+        "categoryMap": {
+            "技术开发": "development",
+            "系统架构": "architecture",
+            "经验总结": "experience",
+            "生活随笔": "life",
+            "阅读笔记": "reading"
+        },
+        "properties": {
+            "title": "Name",
+            "categories": "Categories",
+            "tags": "Tags",
+            "status": "Status",
+            "description": "Description",
+            "author": "Author",
+            "metaTitle": "MetaTitle",
+            "slug": "Slug",
+            "toc": "Toc",
+            "comments": "Comments",
+            "weight": "Weight"
+        }
+    },
+    "image": {
+        "max_width": 1920,
+        "quality": 85,
+        "formats": ["jpg", "webp"]
+    }
+} 
